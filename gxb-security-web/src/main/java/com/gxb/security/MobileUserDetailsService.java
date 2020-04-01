@@ -1,20 +1,11 @@
 package com.gxb.security;
 
-import com.gxb.web.entities.SysPermission;
 import com.gxb.web.entities.SysUser;
 import com.gxb.web.service.SysPermissionService;
 import com.gxb.web.service.SysUserService;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.collections.CollectionUtils;
-import org.assertj.core.util.Lists;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Component;
-import java.util.List;
 
 /**
  * 通过手机号获取用户信息和权限资源
