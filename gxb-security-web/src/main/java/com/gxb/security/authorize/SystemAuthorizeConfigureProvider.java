@@ -14,11 +14,11 @@ public class SystemAuthorizeConfigureProvider implements AuthorizeConfigureProvi
 
     @Override
     public void configure(ExpressionUrlAuthorizationConfigurer<HttpSecurity>.ExpressionInterceptUrlRegistry config) {
-        config.antMatchers("/user").hasAuthority("sys:user")
-                .antMatchers(HttpMethod.GET,"/role").hasAuthority("sys:role")
-                .antMatchers(HttpMethod.GET,"/permission")
-                .access("hasAuthority('sys:permission') or hasAnyRole('ADMIN','ROOT')")
-                ;
+        // config.antMatchers("/user").hasAuthority("sys:user")
+        //         .antMatchers(HttpMethod.GET,"/role").hasAuthority("sys:role")
+        //         .antMatchers(HttpMethod.GET,"/permission")
+        //         .access("hasAuthority('sys:permission') or hasAnyRole('ADMIN','ROOT')")
+        //         ;
                 // .antMatchers("/user").hasRole("ADMIN")
                 // .antMatchers("/user").hasAnyRole("ADMIN","ROOT")
                 // .anyRequest().authenticated();//所有访问该应用的http请求都要通过身份认证才  可以访问
